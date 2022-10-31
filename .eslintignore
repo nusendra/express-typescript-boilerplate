@@ -1,0 +1,9 @@
+node_modules
+.cache
+.vscode
+*.sh
+*.conf
+*.md
+*.json
+*.cmd
+*.txt

@@ -1,0 +1,37 @@
+{
+  "name": "mevn-backend",
+  "version": "0.0.1",
+  "description": "backend for mevn stack",
+  "main": "index.js",
+  "author": "Nusendra",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "start": "NODE_ENV=production node ./build/index.js",
+    "build": "rm -rf build && node esbuild.js",
+    "lint": "eslint . --ext .ts",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.0.0"
+  },
+  "lint-staged": {
+    "*.{js}": "eslint"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.2",
+    "@types/express": "^4.17.14",
+    "@types/helmet": "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "esbuild": "^0.15.11",
+    "eslint": "^8.25.0",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  }
+}
