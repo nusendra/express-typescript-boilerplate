@@ -19,7 +19,7 @@
     "helmet": "^6.0.0"
   },
   "lint-staged": {
-    "*.{js}": "eslint"
+    "*": "eslint"
   },
   "devDependencies": {
     "@types/compression": "^1.7.2",
